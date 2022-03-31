@@ -1,23 +1,18 @@
-package com.paynet.test;
+package com.paynet.utilities;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class DemoTest {
+public class ExcelUtils {
 
-	public static void main(String[] args) throws IOException {
-
-		FileInputStream file = new FileInputStream("testdata/TestData.xlsx");
-
+	public static String[][] getSheetIntoTwoDimArray(String path, String sheetname) throws IOException {
+		FileInputStream file = new FileInputStream(path);
 		XSSFWorkbook book = new XSSFWorkbook(file);
-
-		XSSFSheet sheet = book.getSheet("invalidCredentialTest");
-
+		XSSFSheet sheet = book.getSheet(sheetname);
 		int rowCount = sheet.getPhysicalNumberOfRows();
 		int cellCount = sheet.getRow(0).getPhysicalNumberOfCells();
 
@@ -31,7 +26,10 @@ public class DemoTest {
 			}
 		}
 
-		System.out.println();
+		book.close();
+		file.close();
+
+		return main;
 	}
 
 }
