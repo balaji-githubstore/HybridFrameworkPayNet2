@@ -2,16 +2,16 @@
 <testng-results ignored="1" total="3" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-31T07:52:55 IST" name="Default suite" finished-at="2022-03-31T07:53:17 IST" duration-ms="22561">
+  <suite started-at="2022-03-31T07:56:21 IST" name="Default suite" finished-at="2022-03-31T07:56:43 IST" duration-ms="22520">
     <groups>
     </groups>
-    <test started-at="2022-03-31T07:52:55 IST" name="Default test" finished-at="2022-03-31T07:53:17 IST" duration-ms="22561">
+    <test started-at="2022-03-31T07:56:21 IST" name="Default test" finished-at="2022-03-31T07:56:43 IST" duration-ms="22520">
       <class name="com.paynet.test.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:52:55 IST" name="setup" finished-at="2022-03-31T07:53:04 IST" duration-ms="9384" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:56:21 IST" name="setup" finished-at="2022-03-31T07:56:30 IST" duration-ms="9642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:53:04 IST" name="validCredentialTest" data-provider="validCredentialData" finished-at="2022-03-31T07:53:06 IST" duration-ms="1808" status="FAIL">
+        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:56:30 IST" name="validCredentialTest" data-provider="validCredentialData" finished-at="2022-03-31T07:56:32 IST" duration-ms="1737" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -76,19 +76,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validCredentialTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:53:06 IST" name="teardown" finished-at="2022-03-31T07:53:06 IST" duration-ms="492" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:56:32 IST" name="teardown" finished-at="2022-03-31T07:56:33 IST" duration-ms="496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:53:06 IST" name="setup" finished-at="2022-03-31T07:53:15 IST" duration-ms="8442" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:56:33 IST" name="setup" finished-at="2022-03-31T07:56:41 IST" duration-ms="8517" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:53:15 IST" name="validCredentialTest" data-provider="validCredentialData" finished-at="2022-03-31T07:53:17 IST" duration-ms="1790" status="FAIL">
+        <test-method signature="validCredentialTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:56:41 IST" name="validCredentialTest" data-provider="validCredentialData" finished-at="2022-03-31T07:56:43 IST" duration-ms="1739" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Admin123]]>
+                <![CDATA[Admin]]>
               </value>
             </param>
             <param index="1">
@@ -149,7 +149,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validCredentialTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:53:17 IST" name="teardown" finished-at="2022-03-31T07:53:17 IST" duration-ms="577" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.paynet.test.LoginTest@31fa1761]" started-at="2022-03-31T07:56:43 IST" name="teardown" finished-at="2022-03-31T07:56:43 IST" duration-ms="325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

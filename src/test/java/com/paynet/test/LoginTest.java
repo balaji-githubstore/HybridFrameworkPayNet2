@@ -1,6 +1,10 @@
 package com.paynet.test;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -15,6 +19,9 @@ public class LoginTest extends WebDriverWrapper {
 		driver.findElement(By.id("txtUsername")).sendKeys(username);
 		driver.findElement(By.id("txtPassword")).sendKeys(password);
 		driver.findElement(By.name("Submit")).click();
+		
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("welcome")));
 
 		Assert.assertEquals(driver.getCurrentUrl(), expectedUrl);
 	}

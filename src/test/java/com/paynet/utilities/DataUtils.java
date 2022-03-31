@@ -29,7 +29,7 @@ public class DataUtils {
 		main[0][1]="admin123";
 		main[0][2]="https://opensource-demo.orangehrmlive.com/index.php/dashboard";
 		
-		main[1][0]="Admin123";
+		main[1][0]="Admin";
 		main[1][1]="admin123";
 		main[1][2]="https://opensource-demo.orangehrmlive.com/index.php/dashboard";
 		
