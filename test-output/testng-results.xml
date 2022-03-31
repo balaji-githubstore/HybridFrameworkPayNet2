@@ -1,61 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="3" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-31T07:00:24 IST" name="Default suite" finished-at="2022-03-31T07:01:39 IST" duration-ms="75105">
+  <suite started-at="2022-03-31T07:32:55 IST" name="Default suite" finished-at="2022-03-31T07:33:17 IST" duration-ms="21273">
     <groups>
     </groups>
-    <test started-at="2022-03-31T07:00:24 IST" name="Default test" finished-at="2022-03-31T07:01:39 IST" duration-ms="75105">
-      <class name="com.paynet.test.DemoTest">
-        <test-method signature="validTest(java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.DemoTest@6404f418]" started-at="2022-03-31T07:01:20 IST" name="validTest" data-provider="validData" finished-at="2022-03-31T07:01:28 IST" duration-ms="8128" status="PASS">
+    <test started-at="2022-03-31T07:32:55 IST" name="Default test" finished-at="2022-03-31T07:33:17 IST" duration-ms="21273">
+      <class name="com.paynet.test.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.paynet.test.LoginTest@82de64a]" started-at="2022-03-31T07:32:55 IST" name="setup" finished-at="2022-03-31T07:33:04 IST" duration-ms="8920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCredentialTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.LoginTest@82de64a]" started-at="2022-03-31T07:33:04 IST" name="invalidCredentialTest" data-provider="invalidCredentialData" finished-at="2022-03-31T07:33:06 IST" duration-ms="1641" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[John]]>
+                <![CDATA[john]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[John123]]>
+                <![CDATA[john123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validTest -->
-        <test-method signature="validTest(java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.DemoTest@6404f418]" started-at="2022-03-31T07:01:28 IST" name="validTest" data-provider="validData" finished-at="2022-03-31T07:01:34 IST" duration-ms="6331" status="PASS">
+        </test-method> <!-- invalidCredentialTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.paynet.test.LoginTest@82de64a]" started-at="2022-03-31T07:33:06 IST" name="teardown" finished-at="2022-03-31T07:33:07 IST" duration-ms="482" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.paynet.test.LoginTest@82de64a]" started-at="2022-03-31T07:33:07 IST" name="setup" finished-at="2022-03-31T07:33:15 IST" duration-ms="7964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidCredentialTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.LoginTest@82de64a]" started-at="2022-03-31T07:33:15 IST" name="invalidCredentialTest" data-provider="invalidCredentialData" finished-at="2022-03-31T07:33:16 IST" duration-ms="1723" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Peter]]>
+                <![CDATA[mark]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Peter123]]>
+                <![CDATA[mark123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validTest -->
-        <test-method signature="validTest(java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.DemoTest@6404f418]" started-at="2022-03-31T07:01:34 IST" name="validTest" data-provider="validData" finished-at="2022-03-31T07:01:39 IST" duration-ms="4792" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[paul]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[paul123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- invalidCredentialTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.paynet.test.LoginTest@82de64a]" started-at="2022-03-31T07:33:16 IST" name="teardown" finished-at="2022-03-31T07:33:17 IST" duration-ms="492" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validTest -->
-      </class> <!-- com.paynet.test.DemoTest -->
+        </test-method> <!-- teardown -->
+      </class> <!-- com.paynet.test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

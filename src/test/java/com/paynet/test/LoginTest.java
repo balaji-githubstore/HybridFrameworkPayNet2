@@ -2,6 +2,7 @@ package com.paynet.test;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.paynet.base.WebDriverWrapper;	
@@ -25,7 +26,25 @@ public class LoginTest extends WebDriverWrapper {
 	//(john,john123,Invalid credentials)
 	//(mark,mark123,Invalid credentials)
 	
-	@Test
+	@DataProvider
+	public String[][] invalidCredentialData()
+	{
+		String[][] main=new String[2][3];
+		
+		main[0][0]="john";
+		main[0][1]="john123";
+		main[0][2]="Invalid credentials";
+		
+		main[1][0]="mark";
+		main[1][1]="mark123";
+		main[1][2]="Invalid credentials";
+		
+		return main;
+	}
+	
+	
+	
+	@Test(dataProvider = "invalidCredentialData")
 	public void invalidCredentialTest(String username,String password,String expectedError)
 	{
 		driver.findElement(By.id("txtUsername")).sendKeys(username);
