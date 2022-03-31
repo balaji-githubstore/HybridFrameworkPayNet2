@@ -16,9 +16,8 @@ public class LoginTest extends WebDriverWrapper {
 
 	@Test(dataProviderClass = DataUtils.class,dataProvider = "validCredentialData")
 	public void validCredentialTest(String username, String password, String expectedUrl) {
-		driver.findElement(By.id("txtUsername")).sendKeys(username);
-		driver.findElement(By.id("txtPassword")).sendKeys(password);
-		driver.findElement(By.name("Submit")).click();
+		
+		
 		
 		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("welcome")));
