@@ -1,22 +1,15 @@
 package com.paynet.utilities;
 
+import java.io.IOException;
+
 import org.testng.annotations.DataProvider;
 
 public class DataUtils {
 
 	@DataProvider
-	public String[][] invalidCredentialData()
+	public String[][] invalidCredentialData() throws IOException
 	{
-		String[][] main=new String[2][3];
-		
-		main[0][0]="john";
-		main[0][1]="john123";
-		main[0][2]="Invalid credentials";
-		
-		main[1][0]="mark";
-		main[1][1]="mark123";
-		main[1][2]="Invalid credentials";
-		
+		String[][] main=  ExcelUtils.getSheetIntoTwoDimArray("testdata/testdata.xlsx", "invalidCredentialTest");
 		return main;
 	}
 	
