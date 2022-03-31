@@ -4,7 +4,7 @@
 
 	<test thread-count="5" name="Test UI1">
 
-		<parameter name="browser" value="edge"></parameter>
+		<parameter name="browser" value="ch"></parameter>
 		<classes>
 			<class name="com.paynet.test.LoginUITest" />
 		</classes>
