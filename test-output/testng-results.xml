@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-31T07:00:24 IST" name="Default suite" finished-at="2022-03-31T07:01:39 IST" duration-ms="75105">
+    <groups>
+    </groups>
+    <test started-at="2022-03-31T07:00:24 IST" name="Default test" finished-at="2022-03-31T07:01:39 IST" duration-ms="75105">
+      <class name="com.paynet.test.DemoTest">
+        <test-method signature="validTest(java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.DemoTest@6404f418]" started-at="2022-03-31T07:01:20 IST" name="validTest" data-provider="validData" finished-at="2022-03-31T07:01:28 IST" duration-ms="8128" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTest -->
+        <test-method signature="validTest(java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.DemoTest@6404f418]" started-at="2022-03-31T07:01:28 IST" name="validTest" data-provider="validData" finished-at="2022-03-31T07:01:34 IST" duration-ms="6331" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Peter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Peter123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTest -->
+        <test-method signature="validTest(java.lang.String,java.lang.String)[pri:0, instance:com.paynet.test.DemoTest@6404f418]" started-at="2022-03-31T07:01:34 IST" name="validTest" data-provider="validData" finished-at="2022-03-31T07:01:39 IST" duration-ms="4792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[paul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[paul123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTest -->
+      </class> <!-- com.paynet.test.DemoTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
